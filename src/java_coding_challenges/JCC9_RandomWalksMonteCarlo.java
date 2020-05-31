@@ -18,13 +18,14 @@ public class JCC9_RandomWalksMonteCarlo {
         printLongestValidWalk();
 
     }
+
     public static void testWalks() {
 
         for (int walkLength = 1; walkLength <= MAX_LENGTH_WALK_TESTED; walkLength++) {
             //a valid walk is such that ends in average (+ 50% cases) distance from home of 4 or fewer blocks
             int validWalkCount = 0;
             for (int walk = 0; walk < NUMBER_OF_WALKS; walk++) {
-                int[] coordinates = randomWalk(walkLength);
+                int[] coordinates = executeRandomWalk(walkLength);
                 if (getDistance(coordinates) <= 4) {
                     validWalkCount++;
                 }
@@ -52,7 +53,7 @@ public class JCC9_RandomWalksMonteCarlo {
         return currentLongestValidWalk;
     }
 
-    private static int[] randomWalk(int walkLength) {
+    private static int[] executeRandomWalk(int walkLength) {
         //0, 0 are home coordinates
         int x = 0, y = 0;
         for (int i = 0; i < walkLength; i++) {
