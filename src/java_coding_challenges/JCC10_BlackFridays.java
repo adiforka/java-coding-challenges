@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class JCC10_BlackFridays {
     public static void main(String[] args) {
 
-        //find number of Black Fridays (Friday the 13ths) in given the year
+        //find number of Black Fridays (Friday the 13ths) given the year
         int unluckyDays = unluckyDays(2015);
         System.out.println("unluckyDays = " + unluckyDays);
     }
