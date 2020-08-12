@@ -7,7 +7,7 @@ public class JCC8_LongestPalindromeSubstring {
 
         Solution solution = new Solution();
         System.out.println(solution.findLPS("adogeeseseegodsacrebleu"));
-        System.out.println("KayakkayaK");
+        System.out.println("kayakkayak");
     }
 }
 
@@ -15,7 +15,6 @@ class Solution {
 
     private int resultStart;
     private int resultLength;
-
 
     public String findLPS(String s) {
 

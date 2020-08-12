@@ -20,7 +20,6 @@ public class JCC2_TwoSum {
 
     }
     public static int[] getTwoSum(int[] numbers, int target) {
-
         Map<Integer, Integer> visitedNumbers = new HashMap<>();
         for (int i = 0; i < numbers.length; i++) {
             int delta = target - numbers[i];
@@ -29,7 +28,6 @@ public class JCC2_TwoSum {
             }
             visitedNumbers.put(numbers[i], i);
         }
-
         return new int[]{-1, -1};
     }
 }
